@@ -24,8 +24,8 @@ public class TicketController {
 
     @GetMapping("/tickets/customer")
     public String customerTickets(Model model) {
-        model.addAttribute("tickets", ticketRepository.findByCustomerNameContainingIgnoreCase("Иван"));
-        model.addAttribute("filterTitle", "Заявки клиента Иван");
+        model.addAttribute("tickets", ticketRepository.findByCustomerNameContainingIgnoreCase("Киану"));
+        model.addAttribute("filterTitle", "Заявки клиента Киану");
         return "tickets";
     }
 }
